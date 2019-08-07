@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <div class="sl-block" data-block-type="text">
+                <div class="sl-block-content">
+                    <h1>reveal.js<br>Hello world test run</h1>
+                </div>
+            </div>
+        </section>
+        <section class="stack">
+            <section>
+                <div class="sl-block" data-block-type="text">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h2>Agenda</h2>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <ul>
+                            <li>Necessity</li>
+                            <li>Process visualisation</li>
+                            <li>
+                                <span style="color:red">Hands-On:</span> reveal.js service in action!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h1>Necessity</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <ul>
+                            <li class="fragment">Necessity 1</li>
+                            <li class="fragment">Necessity 2</li>
+                            <li class="fragment">Necessity 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="image">
+                    <h2>Process visualisation</h2>
+                    <img class="fragment" data-src="./img/working_cat.gif"/>
+                </div>
+            </section>
+            <section data-transition="zoom">
+                <h2>This slide will override the presentation transition and zoom!</h2>
+            </section>
+            <section data-transition-speed="fast">
+                <h2>Choose from three transition speeds: default, fast or slow!</h2>
+            </section>
+            <section data-transition="slide">
+                The train goes on …
+            </section>
+            <section data-transition="slide">
+                and on …
+            </section>
+            <section data-transition="slide-in fade-out">
+                and stops.
+            </section>
+            <section data-transition="fade-in slide-out">
+                (Passengers entering and leaving)
+            </section>
+            <section data-transition="slide">
+                And it starts again.
+            </section>
+            <section>
+                <p class="fragment grow">grow</p>
+                <p class="fragment shrink">shrink</p>
+                <p class="fragment fade-out">fade-out</p>
+                <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+                <p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+                <p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+                <p class="fragment highlight-current-blue">blue only once</p>
+                <p class="fragment highlight-red">highlight-red</p>
+                <p class="fragment highlight-green">highlight-green</p>
+                <p class="fragment highlight-blue">highlight-blue</p>
+            </section>
+            <section>
+                <span class="fragment fade-in">
+                    <span class="fragment fade-out">Thank you!</span>
+                </span>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {src: 'plugin/highlight/highlight.js', async: true},
+            {src: 'plugin/zoom-js/zoom.js'}
+        ]
+    });
+</script>
+</body>
+</html>
